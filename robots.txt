@@ -1,0 +1,25 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://jakemarsh.dpdns.org/sitemap.xml
+
+# Block common non-essential files and directories
+Disallow: /private/
+Disallow: /admin/
+Disallow: /*.pdf$
+Disallow: /*.doc$
+Disallow: /*.docx$
+
+# Allow social media crawlers
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Crawl delay (optional - only add if you have server performance concerns)
+# Crawl-delay: 1
